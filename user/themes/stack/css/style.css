@@ -1,0 +1,30 @@
+@media (min-width: 1200px) {
+    .container{
+        max-width: 970px;
+    }
+}
+
+header {
+  margin-top: 25px;
+}
+
+header h1 {
+  margin-top: 15px;
+}
+
+header h2 {
+  margin-top: 5px;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+.logo {
+  float:left;
+  margin-right: 15px;
+}
