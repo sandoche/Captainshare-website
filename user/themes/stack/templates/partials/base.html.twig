@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{% if header.title %}{{ header.title|e('html') }} | {% endif %}{{ site.title|e('html') }}</title>
 
+    {% do assets.addCss('theme://css/stack.min.css') %}
+
     {% block stylesheets %}
-      {% do assets.addCss('theme://css/stack.min.css') %}
+
     {% endblock %}
+    
     {{ assets.css() }}
 
     <!--[if lt IE 9]>
@@ -22,9 +25,12 @@
     {% endblock %}
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    {% do assets.addJs('theme://js/stack.min.js') %}
+
     {% block javascripts %}
-      {% do assets.addJs('theme://js/stack.min.js') %}
+
     {% endblock %}
+
     {{ assets.js() }}
   </body>
 </html>
