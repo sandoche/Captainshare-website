@@ -22,7 +22,7 @@ user/data/*
 !user/data/.*
 user/plugins/*
 !user/plugins/.*
-user/themes/*
+user/themes/antimatter
 !user/themes/.*
 user/localhost/config/security.yaml
 
