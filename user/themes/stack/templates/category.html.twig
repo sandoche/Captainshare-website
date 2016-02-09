@@ -1,9 +1,28 @@
 {% extends 'partials/base.html.twig' %}
 {% set collection = page.collection() %}
+
+{% block stylesheets %}
+  {% do assets.addCss('theme://css/category.css') %}
+{% endblock %}
+
 {% block body %}
-<ul class="navigation">
-  {% for post in collection %}
-    {{ post.title }}
-  {% endfor %}
-</ul>
+<div class="container">
+  <div class="col-md-12">
+    <h1 class="main-title">Sites</h1>
+    {% for post in collection %}
+      <div class="row item">
+        <div class="col-md-8">
+          <div class="picture">
+            <img src="http://placehold.it/125x125"/>
+          </div>
+          <div class="content">
+            <h2 class="title">{{ post.title }}</h2>
+            <div class="description">{{ post.header.description | truncate(200) }}</div>
+            <a href="">Read more <i class="glyphicon glyphicon-chevron-right"></i></a>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
 {% endblock %}

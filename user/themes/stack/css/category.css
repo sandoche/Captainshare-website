@@ -1,0 +1,31 @@
+.main-title{
+  font-size: 25px
+}
+
+.item{
+  margin-bottom: 15px;
+}
+
+.item .picture{
+  float: left;
+  margin-right: 15px;
+}
+
+.item .content .title{
+  margin: 0px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.item .content .description{
+  color: grey;
+  margin-bottom: 5px;
+}
+
+.item .content a{
+  color: grey;
+  text-decoration: none;
+  font-size: 13px;
+}
