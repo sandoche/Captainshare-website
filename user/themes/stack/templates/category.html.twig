@@ -1,0 +1,9 @@
+{% extends 'partials/base.html.twig' %}
+{% set collection = page.collection() %}
+{% block body %}
+<ul class="navigation">
+  {% for post in collection %}
+    {{ post.title }}
+  {% endfor %}
+</ul>
+{% endblock %}

@@ -1,5 +1,5 @@
 ---
-title: Test
+title: Category 2
 ---
 
 # Grav is Running!
