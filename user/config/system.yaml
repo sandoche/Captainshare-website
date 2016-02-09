@@ -4,7 +4,7 @@ home:
   alias: '/home'
 
 pages:
-  theme: antimatter
+  theme: stack
   markdown_extra: false
   process:
     markdown: true
