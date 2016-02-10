@@ -9,20 +9,26 @@
 <div class="container">
   <div class="col-md-12">
     <h1 class="main-title">Sites</h1>
-    {% for post in collection %}
-      <div class="row item">
-        <div class="col-md-8">
-          <div class="picture">
-            <img src="http://placehold.it/125x125"/>
-          </div>
-          <div class="content">
-            <h2 class="title">{{ post.title }}</h2>
-            <div class="description">{{ post.header.description | truncate(200) }}</div>
-            <a href="{{post.url}}">Read more <i class="glyphicon glyphicon-chevron-right"></i></a>
-          </div>
-        </div>
+    <div class="row item">
+      <div class="col-md-8">
+        {% for post in collection %}
+            <div class="row item">
+              <div class="col-sm-3 col-xs-12">
+                <a href="{{ post.header.site_url }}" target="_blank">
+                  <img src="http://placehold.it/125x125"/>
+                </a>
+              </div>
+              <div class="col-sm-9 col-xs-12">
+                <div class="content">
+                  <h2 class="title"><a href="{{ post.header.site_url }}" target="_blank">{{ post.title }}</a></h2>
+                  <div class="description">{{ post.header.description | truncate(200) }}</div>
+                  <a href="{{post.url}}" class="more">Read more <i class="glyphicon glyphicon-chevron-right"></i></a>
+                </div>
+              </div>
+            </div>
+        {% endfor %}
       </div>
-    {% endfor %}
+    </div>
   </div>
 </div>
 {% endblock %}
