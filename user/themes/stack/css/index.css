@@ -25,3 +25,8 @@
   color: #fff;
   text-decoration: none;
 }
+
+h1 a, h1 a:hover {
+  color: #333;
+  text-decoration: none;
+}
