@@ -29,6 +29,10 @@ h2 {
   margin-right: 15px;
 }
 
+section.home{
+  margin-bottom: 30px;
+}
+
 .footer{
   background-color: #333;
   color: white;
@@ -69,6 +73,7 @@ h2 {
   padding: 10px 0;
 }
 
+<<<<<<< HEAD
 a {
   color: #8BC34A;
   -webkit-transition: color 100ms linear;
@@ -80,4 +85,8 @@ a {
 
 a:hover, a:active {
   color: #333;
+=======
+.footer .copyright .green{
+  color: #8BC34A;
+>>>>>>> c81545fb30a8315fb5496a5fadfeba067c88c4ac
 }
