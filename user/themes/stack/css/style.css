@@ -29,6 +29,10 @@ h2 {
   margin-right: 15px;
 }
 
+section.home{
+  margin-bottom: 30px;
+}
+
 .footer{
   background-color: #333;
   color: white;
@@ -62,4 +66,8 @@ h2 {
 .footer .copyright{
   background-color: #111;
   padding: 10px 0;
+}
+
+.footer .copyright .green{
+  color: #8BC34A;
 }
