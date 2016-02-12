@@ -1,0 +1,32 @@
+.site-title {
+  background: #8BC34A;
+  color: #fff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+hr {
+  margin-bottom: 0px;
+}
+
+h3 {
+  margin-top: 0;
+  font-size: 28px;
+}
+
+h4 {
+  margin-top: 20px;
+}
+
+.short-description {
+
+}
+
+.long-description {
+  margin-top: 20px;
+}
+
+.info {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}

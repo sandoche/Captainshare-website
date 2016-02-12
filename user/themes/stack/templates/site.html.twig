@@ -1,4 +1,60 @@
 {% extends 'partials/base.html.twig' %}
 
+{% block stylesheets %}
+  {% do assets.addCss('theme://css/site.css') %}
+{% endblock %}
+
+
 {% block body %}
+<section class="site-title">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-2">
+        <a href="{{ page.header.site_url }}" target="_blank">
+          <img src="http://placehold.it/125x125"/>
+        </a>
+      </div>
+      <div class="col-sm-6">
+        <h3>{{ page.title }}</h3>
+        <p class="short-description">{{ page.header.description }}</p>
+        <p class="category">{{ page.header.category }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container info">
+  <div class="row">
+    <div class="col-sm-8">
+      <img src="http://placehold.it/800x300" class="img-responsive"/>
+      <h4>About {{ page.title }}</h4>
+      <p class="long-description">{{ page.header.description_long }}</p>
+    </div>
+    <div class="col-sm-4">
+      <div class="panel panel-default">
+          <div class="panel-heading">Social networks</div>
+          <div class="panel-body">
+            <a href="#" target="_blank"><i class="fa fa-facebook-square"></i></a>
+            <a href="#" target="_blank"><i class="fa fa-twitter-square"></i></a>
+            <a href="#" target="_blank"><i class="fa fa-google-plus-square"></i></a>
+            <a href="#" target="_blank"><i class="fa fa-instagram-square"></i></a>
+          </div>
+      </div>
+      <a href="{{ page.header.site_url }}" class="btn btn-default btn-large btn-block" target="_blank">{{ page.title }}</a>
+    </div>
+  </div>
+</section>
+
+
+<!--
+
+<div class="content">
+  <h2 class="title"><a href="{{ page.header.site_url }}" target="_blank">{{ page.title }}</a></h2>
+  <div class="description">{{ page.header.description }}</div>
+  <a href="{{page.url}}" class="more">Read more <i class="glyphicon glyphicon-chevron-right"></i></a>
+</div>
+
+-->
+
+
 {% endblock %}
