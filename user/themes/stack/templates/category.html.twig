@@ -7,7 +7,7 @@
 
 {% block body %}
 <div class="container">
-  <h1 class="main-title">{{ page.title }}</h1>
+  <h2 class="main-title">{{ page.title }}</h2>
   <div class="row item">
     <div class="col-md-8">
       {% for post in collection %}
@@ -21,6 +21,11 @@
               <div class="content">
                 <h3 class="title"><a href="{{ post.header.site_url }}" target="_blank">{{ post.title }}</a></h3>
                 <div class="description">{{ post.header.description | truncate(200) }}</div>
+                <div>
+                  {% for post_taxonomy in post.taxonomy.region %}
+                    {{ post_taxonomy }}{% if not loop.last %}, {% endif %}
+                  {% endfor %}
+                </div>
                 <a href="{{post.url}}" class="more">Read more <i class="glyphicon glyphicon-chevron-right"></i></a>
               </div>
             </div>

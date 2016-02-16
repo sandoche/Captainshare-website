@@ -8,6 +8,8 @@ facebook: http://sandoche.com
 google: http://sandoche.com
 twitter: http://sandoche.com
 instagram: http://sandoche.com
+taxonomy:
+  region: [US, EU]
 ---
 
 # Test
