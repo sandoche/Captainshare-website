@@ -115,3 +115,7 @@ a:hover, a:active {
 .footer .copyright .green{
   color: #8BC34A;
 }
+
+.label-info {
+  background-color: #8BC34A;
+}

@@ -17,7 +17,13 @@
       <div class="col-sm-6">
         <h3>{{ page.title }}</h3>
         <p class="short-description">{{ page.header.description }}</p>
-        <a href="{{ page.parent.url }}" class="category"> <span class="badge">{{ page.parent.title }}</span></a>
+        <a href="{{ page.parent.url }}" class="category"> <span class="badge badge-category">{{ page.parent.title }}</span></a>
+      </div>
+      <div class="col-sm-4">
+        <h4>Regions</h4>
+        {% for page_taxonomy in page.taxonomy.region %}
+          <span class="label label-default">{{ page_taxonomy }}</span>{% if not loop.last %} {% endif %}
+        {% endfor %}
       </div>
     </div>
   </div>
