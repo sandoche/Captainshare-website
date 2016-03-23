@@ -1,0 +1,13 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block stylesheets %}
+  {% do assets.addCss('theme://css/index.css') %}
+{% endblock %}
+
+{% block body %}
+<section class="container home">
+  <div class="row">
+    {% include "forms/form.html.twig" %}
+  </div>
+</section>
+{% endblock %}
