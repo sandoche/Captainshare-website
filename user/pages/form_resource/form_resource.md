@@ -31,6 +31,14 @@ form:
           rows: 10
           classes: form-control
           outerclasses: form-group
+        - name: g-recaptcha-response
+          label: Captcha
+          type: captcha
+          recatpcha_site_key: 6LfL5BsTAAAAAIcsWvrtc14y-ZHTXNSupI76NkOY
+          recaptcha_not_validated: 'Captcha not valid!'
+          validate:
+            required: true
+          outerclasses: form-group
 
     buttons:
         - type: submit
