@@ -20,7 +20,7 @@
   transition: background-color 500ms linear;
 }
 
-.category:hover, .category:active {
+.category:hover, .category:active, .category:focus {
   background-color: #333;
   color: #fff;
   text-decoration: none;
