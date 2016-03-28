@@ -1,7 +1,7 @@
-title: Grav
+title: CaptainShare
 author:
   name: Appyfriends
   email: 'etienne.valette@gmail.com'
 metadata:
-    description: 'Grav is an easy to use, yet powerful, open source flat-file CMS'
+    description: 'A curated directory of sharing economy resources to make & save money'
 taxonomies: [region]
