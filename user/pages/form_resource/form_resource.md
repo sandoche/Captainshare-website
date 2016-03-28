@@ -3,9 +3,27 @@ title: Add resource
 form:
     name: add-resource
     fields:
-        - name: resource
-          label: Resource
-          placeholder: Add your resource
+        - name: name
+          label: Name
+          placeholder: Enter the website name
+          autofocus: on
+          type: text
+          validate:
+            required: true
+          classes: form-control
+          outerclasses: form-group
+        - name: url
+          label: Url
+          placeholder: Add the website url
+          autofocus: on
+          type: text
+          validate:
+            required: true
+          classes: form-control
+          outerclasses: form-group
+        - name: description
+          label: Description
+          placeholder: Add your description
           autofocus: on
           type: textarea
           validate:
