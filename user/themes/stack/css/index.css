@@ -26,7 +26,7 @@
   text-decoration: none;
 }
 
-h1 a, h1 a:hover {
+h1 a, h1 a:hover, h1 a:active {
   color: #333;
   text-decoration: none;
 }
