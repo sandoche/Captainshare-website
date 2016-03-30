@@ -7,6 +7,33 @@
 }
 
 
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 200px;
+}
+
+
+@media only screen and (max-width : 768px) {
+      footer {
+    height: auto !important;
+    }
+}
+
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 200px;
+}
+
+
+
 h1, h2, h3 {
   font-family: 'Roboto', sans-serif;
 }
@@ -119,3 +146,5 @@ a:hover, a:active {
 .label-info {
   background-color: #8BC34A;
 }
+
+
