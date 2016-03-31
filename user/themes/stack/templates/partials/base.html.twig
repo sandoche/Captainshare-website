@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{% if header.title %}{{ header.title|e('html') }} | {% endif %}{{ site.title|e('html') }}</title>
+    <link rel="icon" type="image/png" href="{{ url('theme://images/logo100.png', true) }}" />
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     {% do assets.addCss('theme://css/stack.min.css') %}
     {% do assets.addCss('theme://css/style.css') %}
@@ -38,7 +40,7 @@
       <div class="container">
         <div class="row">
           <div class="col-xs-12">
-            <a href="{{ base_url_absolute }}"><img src="http://placehold.it/100x100" href="#" alt="logo" class="logo"></a>
+            <a href="{{ base_url_absolute }}"><img src="{{ url('theme://images/logo512.png', true) }}" alt="logo" class="logo"></a>
             <h1><a href="{{ base_url_absolute }}">Captain<span class="font-bold">Share</span></a></h1>
             <h2>A curated directory of sharing economy resources to make & save money</h2>
           </div>

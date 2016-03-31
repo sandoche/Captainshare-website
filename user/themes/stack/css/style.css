@@ -79,6 +79,8 @@ h2 {
 .logo {
   float:left;
   margin-right: 15px;
+  height: 100px;
+  width: 100px;
 }
 
 section.home{
