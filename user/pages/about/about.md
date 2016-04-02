@@ -2,38 +2,32 @@
 title: About
 ---
 
-# Grav is Running!
-## You have installed **Grav** successfully
+# Sharing economy is our future
 
-Congratulations! You have installed the **Base Grav Package** that provides a **simple page** and the default **antimatter** theme to get you started.
 
->>>>> If you want a more **full-featured** base install, you should check out [**Skeleton** packages available in the downloads](http://getgrav.org/downloads).
+## Why
 
-### Find out all about Grav
+Because we think that sharing economy is our future we made this curated directory of sharing economy resources.
+This website will help you to take advantage of your assets to make money but also save money using resources shared by your peers.
 
-* Learn about **Grav** by checking out our dedicated [Learn Grav](http://learn.getgrav.org) site.
-* Download **plugins**, **themes**, as well as other Grav **skeleton** packages from the [Grav Downloads](http://getgrav.org/downloads) page.
-* Check out our [Grav Development Blog](http://getgrav.org/blog) to find out the latest goings on in the Grav-verse.
 
-### Edit this Page
+## Quotes
 
-To edit this page, simply navigate to the folder you installed **Grav** into, and then browse to the `user/pages/01.home` folder and open the `default.md` file in your [editor of choice](http://learn.getgrav.org/basics/requirements).  You will see the content of this page in [Markdown format](http://learn.getgrav.org/content/markdown).
+Some quotes that summurize our thoughs.
 
-### Create a New Page
 
-Creating a new page is a simple affair in **Grav**.  Simply follow these simple steps:
+> "Help others identify monetization opportunities"
+>
+> — Billie Howard
 
-1. Navigate to your pages folder: `user/pages/` and create a new folder.  In this example, we will use [explicit default ordering](http://learn.getgrav.org/content/content-pages) and call the folder `02.mypage`.
-2. Launch your text editor and paste in the following sample code:
+***
 
-        ---
-        title: My New Page
-        ---
-        # My New Page!
+> "The founndation of the sharing economy is making the most of available resources"
+>
+> — Billie Howard
 
-        This is the body of **my new page** and I can easily use _Markdown_ syntax here.
+***
 
-3. Save this file in the `user/pages/02.mypage/` folder as `default.md`. This will tell **Grav** to render the page using the **default** template.
-4. That is it! Reload your browser to see your new page in the menu.
-
->>> NOTE: The page will automatically show up in the Menu after the "Home" menu item. If you wish to change the name that shows up in the Menu, simple add: `menu: My Page` between the dashes in the page content. This is called the YAML front matter, and it is where you configure page-specific options.
+> "People are increasingly turning into a new way to save money - sharing"
+>
+> — Billie Howard
