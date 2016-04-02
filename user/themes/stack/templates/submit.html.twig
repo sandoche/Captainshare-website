@@ -5,8 +5,13 @@
 {% endblock %}
 
 {% block body %}
+<div class="block-title">
+  <div class="container">
+    <h2 class="main-title">{{ header.title }}</h2>
+  </div>
+</div>
+
 <section class="container home">
-  <h2>{{ header.title }}</h2>
   {% include "forms/form.html.twig" %}
 </section>
 {% endblock %}
