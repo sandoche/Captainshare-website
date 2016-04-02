@@ -13,7 +13,7 @@ html {
 }
 body {
   /* Margin bottom by footer height */
-  margin-bottom: 200px;
+  margin-bottom: 210px;
 }
 
 
@@ -29,7 +29,7 @@ footer {
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
-  height: 200px;
+  height: 210px;
 }
 
 

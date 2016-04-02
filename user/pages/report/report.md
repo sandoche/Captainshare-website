@@ -1,5 +1,5 @@
 ---
-title: Report dead link
+title: Report a dead link
 form:
     name: dead-link
     fields:
