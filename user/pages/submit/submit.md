@@ -4,7 +4,7 @@ form:
     name: add-resource
     fields:
         - name: name
-          label: Name
+          label: Resource name
           placeholder: Enter the website name
           autofocus: on
           type: text
@@ -13,7 +13,7 @@ form:
           classes: form-control
           outerclasses: form-group
         - name: url
-          label: Url
+          label: URL
           placeholder: Add the website url
           autofocus: on
           type: text
@@ -21,9 +21,18 @@ form:
             required: true
           classes: form-control
           outerclasses: form-group
+        - name: email
+          label: Your email
+          placeholder: Add your email
+          autofocus: on
+          type: email
+          validate:
+            required: true
+          classes: form-control
+          outerclasses: form-group          
         - name: description
           label: Description
-          placeholder: Add your description
+          placeholder: Add website's description
           autofocus: on
           type: textarea
           validate:
@@ -43,6 +52,7 @@ form:
     buttons:
         - type: submit
           value: Submit
+          classes: "btn btn-default btn-lg"
 
     process:
         - email:
@@ -57,7 +67,7 @@ form:
             dateformat: Ymd-His-u
             extension: txt
             body: "{% include 'forms/data.txt.twig' %}"
-        - message: Thank you for your message!
+        - message: Thank you for your contribution, we will have a look before posting it!
 ---
 
 # Grav is Running!

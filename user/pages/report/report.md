@@ -4,7 +4,7 @@ form:
     name: dead-link
     fields:
         - name: url
-          label: Url
+          label: URL
           placeholder: Enter the broken url
           autofocus: on
           type: text
@@ -24,6 +24,7 @@ form:
     buttons:
         - type: submit
           value: Submit
+          classes: "btn btn-default btn-lg"
 
     process:
         - email:
