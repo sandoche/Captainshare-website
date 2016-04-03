@@ -1,5 +1,5 @@
 ---
-title: Cab & delivery
+title: Driving & delivery
 content:
     items: @self.children
 metadata:
