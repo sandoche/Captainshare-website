@@ -1,0 +1,17 @@
+---
+title: Airbnb
+description: Rent unique accommodation from local hosts in 190+ countries. Feel at home anywhere you go in the world with Airbnb.
+site_url: https://www.airbnb.com
+category: House
+facebook: http://www.facebook.com/airbnb
+google: https://plus.google.com/+airbnb
+twitter: https://twitter.com/airbnb
+instagram: https://www.instagram.com/airbnb
+taxonomy:
+  region: [USA, EU, AS]
+metadata:
+    'og:title': CaptainShare | Airbnb
+    'og:type': website
+    'og:image': http://www.google.com/logo/site1
+    'og:description': Rent unique accommodation from local hosts in 190+ countries. Feel at home anywhere you go in the world with Airbnb.
+---
