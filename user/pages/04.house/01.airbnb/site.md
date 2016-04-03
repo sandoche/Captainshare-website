@@ -12,6 +12,5 @@ taxonomy:
 metadata:
     'og:title': CaptainShare | Airbnb
     'og:type': website
-    'og:image': http://www.google.com/logo/site1
     'og:description': Rent unique accommodation from local hosts in 190+ countries. Feel at home anywhere you go in the world with Airbnb.
 ---
