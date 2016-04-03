@@ -25,3 +25,18 @@
   color: #fff;
   text-decoration: none;
 }
+
+
+#error {
+
+  text-align: center;
+
+}
+
+#error h1 {
+
+  font-size: 16rem !important;
+  font-weight: 900;
+  color: #8BC34A;
+
+}
