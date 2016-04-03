@@ -9,8 +9,8 @@ twitter: https://twitter.com/lyft
 instagram: https://www.instagram.com/lyft
 taxonomy:
   region: [USA]
-logo: logo.png
-logoW: logoW.png
+logo: logo.jpg
+logoW: logo.jpg
 homepage: homepage.jpg
 metadata:
     'og:title': CaptainShare | Lyft

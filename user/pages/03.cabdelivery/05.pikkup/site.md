@@ -9,7 +9,7 @@ instagram: https://www.instagram.com/getpikkup
 taxonomy:
   region: [USA]
 logo: logo.png
-logoW: logoW.png
+logoW: logo.png
 homepage: homepage.jpg
 metadata:
     'og:title': CaptainShare | pikkup

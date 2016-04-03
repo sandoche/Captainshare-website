@@ -10,7 +10,7 @@ instagram: https://www.instagram.com/uber
 taxonomy:
   region: [USA, EU, AS]
 logo: logo.png
-logoW: logoW.png
+logoW: logo.png
 homepage: homepage.jpg
 metadata:
     'og:title': CaptainShare | Uber
