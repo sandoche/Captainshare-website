@@ -11,7 +11,7 @@
     <div class="row">
       <div class="col-sm-2">
         <a href="{{ page.header.site_url }}" target="_blank">
-          <img src="http://placehold.it/125x125"/>
+          <img src="{{ page.media[page.header.logoW].url }}" class="img-responsive"/>
         </a>
       </div>
       <div class="col-sm-6">
@@ -32,9 +32,7 @@
 <section class="container info">
   <div class="row">
     <div class="col-sm-8">
-      <img src="http://placehold.it/800x300" class="img-responsive"/>
-      <h4>About {{ page.parent.title }}</h4>
-      <p class="long-description">{{ page.header.description_long }}</p>
+      <img src="{{ page.media[page.header.homepage].url }}" class="img-responsive"/>
     </div>
     <div class="col-sm-4">
       <div class="panel panel-default">

@@ -9,6 +9,9 @@ twitter: https://twitter.com/airbnb
 instagram: https://www.instagram.com/airbnb
 taxonomy:
   region: [USA, EU, AS]
+logo: logo.png
+logoW: logoW.png
+homepage: homepage.jpg
 metadata:
     'og:title': CaptainShare | Airbnb
     'og:type': website
