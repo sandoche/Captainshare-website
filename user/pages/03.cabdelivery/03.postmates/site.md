@@ -2,7 +2,7 @@
 title: Postmates
 description: Everyone's favorite delivery service! Lunch, dinner, groceries, office supplies or anything else.
 site_url: https://postmates.com/
-category: Driving & delivery
+category: Driving & delivering
 facebook: http://www.facebook.com/Postmates
 twitter: https://twitter.com/postmates
 instagram: https://www.instagram.com/postmates

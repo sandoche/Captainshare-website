@@ -2,7 +2,7 @@
 title: Lyft
 description: Rideshare with Lyft. Lyft is your friend with a car, whenever you need one.
 site_url: https://www.lyft.com
-category: Driving & delivery
+category: Driving & delivering
 facebook: http://www.facebook.com/lyft
 google: https://plus.google.com/+lyft
 twitter: https://twitter.com/lyft

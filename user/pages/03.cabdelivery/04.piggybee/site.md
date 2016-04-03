@@ -2,7 +2,7 @@
 title: PiggyBee
 description: Delivery by travelers.
 site_url: https://www.airbnb.com
-category: Driving & delivery
+category: Driving & delivering
 facebook: http://www.facebook.com/PiggyBeeBook
 twitter: https://twitter.com/PiggyBeeTw
 taxonomy:

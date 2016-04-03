@@ -2,7 +2,7 @@
 title: BlaBlaCar
 description: BlaBlaCar is the world's leading long distance ridesharing service, connecting drivers with empty seats to people travelling the same way.
 site_url: https://www.blablacar.com
-category: Driving & delivery
+category: Driving & delivering
 facebook: http://www.facebook.com/BlaBlaCar
 google: https://plus.google.com/+BlaBlaCarUK
 twitter: https://twitter.com/BlaBlaCar
