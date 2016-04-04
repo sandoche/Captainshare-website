@@ -7,8 +7,8 @@ facebook: https://www.facebook.com/JustParkHQ
 twitter: https://twitter.com/justpark
 taxonomy:
   region: [EU]
-logo: logo.jpg
-logoW: logo.jpg
+logo: logo.png
+logoW: logo.png
 homepage: homepage.jpg
 metadata:
     'og:title': CaptainShare | JustPark
