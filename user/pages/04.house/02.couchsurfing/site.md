@@ -11,7 +11,7 @@ taxonomy:
   region: [USA, EU, AS]
 logo: logo.jpg
 logoW: logo.jpg
-homepage: homepage.jpg
+homepage: homepage.png
 metadata:
     'og:title': CaptainShare | Couchsurfing
     'og:type': website

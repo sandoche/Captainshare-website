@@ -1,7 +1,7 @@
 ---
 title: Wimdu
 description: Find accommodation worldwide on Wimdu ✓ Choose from over 350000 vacation rentals from just $13/night
-site_url: https://www.uber.com
+site_url: http://www.wimdu.com/
 category: Driving & delivering
 facebook: http://www.facebook.com/wimdu
 google: https://plus.google.com/+wimdu

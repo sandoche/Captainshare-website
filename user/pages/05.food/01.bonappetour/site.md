@@ -11,7 +11,7 @@ taxonomy:
   region: [USA, EU, AS]
 logo: logo.png
 logoW: logoW.png
-homepage: homepage.jpg
+homepage: homepage.png
 metadata:
     'og:title': CaptainShare | BonAppetour
     'og:type': website
