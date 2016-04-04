@@ -2,7 +2,7 @@
 title: Airbnb
 description: Rent unique accommodation from local hosts in 190+ countries. Feel at home anywhere you go in the world with Airbnb.
 site_url: https://www.airbnb.com
-category: House
+category: Accommodation
 facebook: http://www.facebook.com/airbnb
 google: https://plus.google.com/+airbnb
 twitter: https://twitter.com/airbnb

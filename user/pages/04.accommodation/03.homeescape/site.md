@@ -2,7 +2,7 @@
 title: HomeEscape
 description: Find & book vacation rentals with HomeEscape. Rent everything including cabins, condos, apartments, houses or villas.
 site_url: https://www.homeescape.com
-category: House
+category: Accommodation
 facebook: http://www.facebook.com/homeescape
 google: https://plus.google.com/+Homeescape
 twitter: https://twitter.com/homeescape
