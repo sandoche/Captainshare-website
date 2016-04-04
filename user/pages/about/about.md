@@ -8,14 +8,14 @@ title: About
 
 ## Why CaptainShare
 
-Because we think that sharing economy is our future we made this curated directory of sharing economy resources.
-This website will help you to take advantage of your assets to make money but also save money using resources shared by your peers.
+Because we think that sharing economies are the future, we made this curated directory of sharing economy resources.
+This website will help you take advantage of your assets to make and save money using resources shared by your peers.
 
 ***
 
 ## Quotes
 
-Some quotes that summurize our thoughs.
+Some quotes that summarize our thoughs.
 
 > "Help others identify monetization opportunities"
 >
@@ -23,21 +23,21 @@ Some quotes that summurize our thoughs.
 
 Yeah that is what we do.
 
-> "The founndation of the sharing economy is making the most of available resources"
+> "The foundation of the sharing economy is making the most of available resources"
 >
 > — Billie Howard
 
-Now, you can do it !
+Now you can do it!
 
-> "People are increasingly turning into a new way to save money - sharing"
+> "People are increasingly turning to a new way to save money - sharing"
 >
 > — Billie Howard
 
-Share & save money, that's simple :)
+Share & save money, it's that simple :)
 
 ***
 
 ## Who we are
 
-We are an team of friends called AppyFriends, we are spending our time to build apps with fun :)
+We are a team of friends called AppyFriends, we are spending our time to build apps while having fun :)
 http://appyfriends.io/ 
