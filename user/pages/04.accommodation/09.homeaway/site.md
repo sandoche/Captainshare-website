@@ -2,7 +2,7 @@
 title: HomeAway
 description: Your Whole Holiday Starts Here. Book Easily And Securely Today!
 site_url: https://www.homeaway.com
-category: House
+category: Accommodation
 facebook: http://www.facebook.com/homeaway
 google: https://plus.google.com/+homeawaycom
 twitter: https://twitter.com/homeaway

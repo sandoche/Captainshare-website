@@ -2,7 +2,7 @@
 title: Roomorama
 description: Find accommodation and vacation rentals worldwide. Short term apartment and private homes for rent.
 site_url: https://www.roomorama.com
-category: House
+category: Accommodation
 facebook: http://www.facebook.com/roomorama
 google: https://plus.google.com/+roomorama
 twitter: https://twitter.com/Roomorama

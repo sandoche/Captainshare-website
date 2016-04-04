@@ -2,7 +2,7 @@
 title: FridayFlats
 description: Stay in one of over 10000 vacation apartments & holiday lettings.
 site_url: https://www.fridayflats.com
-category: House
+category: Accommodation
 facebook: http://www.facebook.com/FridayFlats
 google: https://plus.google.com/+Fridayflats
 twitter: https://twitter.com/fridayflats

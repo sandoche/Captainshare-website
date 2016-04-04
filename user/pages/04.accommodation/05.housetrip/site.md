@@ -2,7 +2,7 @@
 title: HouseTrip
 description: We offer over 300000 holiday apartments, villas, cottages & more worldwide. Book a beautiful holiday home for 50% less than the price of a hotel room!
 site_url: https://www.housetrip.com
-category: House
+category: Accommodation
 facebook: http://www.facebook.com/HouseTrip
 google: https://plus.google.com/+housetrip
 twitter: https://twitter.com/housetrip

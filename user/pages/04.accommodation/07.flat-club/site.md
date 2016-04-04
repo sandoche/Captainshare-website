@@ -2,7 +2,7 @@
 title: flatclub
 description: FlatClub is a marketplace for trusted medium term stays - from a few weeks to a few months.
 site_url: https://flat-club.com/
-category: House
+category: Accommodation
 facebook: http://www.facebook.com/flatclub
 google: https://plus.google.com/+Flat-club
 twitter: https://twitter.com/flatclubcom
