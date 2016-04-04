@@ -8,8 +8,8 @@ twitter: http://twitter.com/rvshareonline
 instagram: http://instagram.com/rvshare
 taxonomy:
   region: [USA]
-logo: logo.png
-logoW: logo.png
+logo: logo.jpg
+logoW: logo.jpg
 homepage: homepage.jpg
 metadata:
     'og:title': CaptainShare | RVshare

@@ -8,8 +8,8 @@ twitter: http://twitter.com/shapeways
 instagram: http://instagram.com/shapeways
 taxonomy:
   region: [USA, EU, AS]
-logo: logo.png
-logoW: logo.png
+logo: logo.jpg
+logoW: logo.jpg
 homepage: homepage.jpg
 metadata:
     'og:title': CaptainShare | Shapeways

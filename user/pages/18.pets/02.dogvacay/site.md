@@ -8,8 +8,8 @@ twitter: http://twitter.com/dogvacay
 instagram: http://instagram.com/dogvacay
 taxonomy:
   region: [USA]
-logo: logo.png
-logoW: logo.png
+logo: logo.jpg
+logoW: logo.jpg
 homepage: homepage.jpg
 metadata:
     'og:title': CaptainShare | DogVacay

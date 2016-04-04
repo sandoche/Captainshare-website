@@ -8,8 +8,8 @@ twitter: http://twitter.com/holidog_com
 instagram: http://instagram.com/holidog_official
 taxonomy:
   region: [EU]
-logo: logo.png
-logoW: logo.png
+logo: logo.jpg
+logoW: logo.jpg
 homepage: homepage.jpg
 metadata:
     'og:title': CaptainShare | Holidog
