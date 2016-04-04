@@ -28,10 +28,10 @@ form:
 
     process:
         - email:
-            from: "etienne.valette@gmail.com"
+            from: "{{ config.plugins.email.from }}"
             to:
-              - "etienne.valette@gmail.com"
-              - "etienne.valette@gmail.com"
+              - "{{ config.plugins.email.from }}"
+              - "{{ config.plugins.email.from }}"
             subject: "[Feedback] {{ form.value.resource|e }}"
             body: "{% include 'forms/data.html.twig' %}"
         - save:
