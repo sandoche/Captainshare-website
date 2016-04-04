@@ -8,8 +8,8 @@ twitter: http://twitter.com/guidelikeyou
 instagram: http://instagram.com/guidelikeyou
 taxonomy:
   region: [USA, EU, AS]
-logo: logo.png
-logoW: logo.png
+logo: logo.jpg
+logoW: logo.jpg
 homepage: homepage.jpg
 metadata:
     'og:title': CaptainShare | Guide Like You
