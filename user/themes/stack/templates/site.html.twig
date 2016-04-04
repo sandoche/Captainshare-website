@@ -35,15 +35,25 @@
       <img src="{{ page.media[page.header.homepage].url }}" class="img-responsive"/>
     </div>
     <div class="col-sm-4">
+    {% if page.header.facebook or page.header.twitter or page.header.google or page.header.instagram %}
       <div class="panel panel-default">
           <div class="panel-heading">Social networks</div>
           <div class="panel-body">
-            <a href="{{ page.facebook }}" target="_blank"><i class="fa fa-3x fa-facebook-square"></i></a>
-            <a href="{{ page.twitter }}" target="_blank"><i class="fa fa-3x fa-twitter-square"></i></a>
-            <a href="{{ page.google }}" target="_blank"><i class="fa fa-3x fa-google-plus-square"></i></a>
-            <a href="{{ page.instagram }}" target="_blank"><i class="fa fa-3x fa-instagram"></i></a>
+            {% if page.header.facebook %}
+                <a href="{{ page.header.facebook }}" target="_blank"><i class="fa fa-3x fa-facebook-square"></i></a>
+            {% endif %}
+            {% if page.header.twitter %}
+                <a href="{{ page.header.twitter }}" target="_blank"><i class="fa fa-3x fa-twitter-square"></i></a>
+            {% endif %}
+            {% if page.header.google %}
+                <a href="{{ page.header.google }}" target="_blank"><i class="fa fa-3x fa-google-plus-square"></i></a>
+            {% endif %}
+            {% if page.header.instagram %}
+                <a href="{{ page.header.instagram }}" target="_blank"><i class="fa fa-3x fa-instagram"></i></a>
+            {% endif %}
           </div>
       </div>
+    {% endif %}
       <a href="{{ page.header.site_url }}" class="btn btn-default btn-large btn-block" target="_blank">{{ page.title }}</a>
     </div>
   </div>
