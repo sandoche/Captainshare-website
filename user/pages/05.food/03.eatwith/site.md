@@ -8,8 +8,8 @@ twitter: https://twitter.com/eatwith/
 instagram: https://www.instagram.com/eatwith/
 taxonomy:
   region: [USA, EU, AS]
-logo: logo.png
-logoW: logoW.png
+logo: logo.jpg
+logoW: logoW.jpg
 homepage: homepage.jpg
 metadata:
     'og:title': CaptainShare | EatWith

@@ -7,8 +7,8 @@ facebook: http://www.facebook.com/pages/Lending-Club/8705550790
 twitter: http://twitter.com/lendingclub
 taxonomy:
   region: [USA]
-logo: logo.png
-logoW: logoW.png
+logo: logo.jpg
+logoW: logoW.jpg
 homepage: homepage.jpg
 metadata:
     'og:title': CaptainShare | Lending Club

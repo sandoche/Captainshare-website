@@ -8,8 +8,8 @@ twitter: https://twitter.com/travelingspoon
 instagram: https://www.instagram.com/travelingspoons/
 taxonomy:
   region: [AS]
-logo: logo.png
-logoW: logoW.png
+logo: logo.jpg
+logoW: logoW.jpg
 homepage: homepage.jpg
 metadata:
     'og:title': CaptainShare | Traveling Spoon

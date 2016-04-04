@@ -7,8 +7,8 @@ facebook: https://www.facebook.com/CARMAnation
 twitter: https://twitter.com/CARMAnation
 taxonomy:
   region: [USA]
-logo: logo.png
-logoW: logoW.png
+logo: logo.jpg
+logoW: logoW.jpg
 homepage: homepage.jpg
 metadata:
     'og:title': CaptainShare | CARMAnation

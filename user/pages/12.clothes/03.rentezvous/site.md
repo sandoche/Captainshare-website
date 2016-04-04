@@ -7,8 +7,8 @@ facebook: https://www.facebook.com/rentezvous
 twitter: https://twitter.com/rentezvous
 taxonomy:
   region: [USA, EU]
-logo: logo.png
-logoW: logoW.png
+logo: logo.jpg
+logoW: logoW.jpg
 homepage: homepage.jpg
 metadata:
     'og:title': CaptainShare | Rentez-Vous

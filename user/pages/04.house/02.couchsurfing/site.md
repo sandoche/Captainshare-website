@@ -9,8 +9,8 @@ twitter: https://twitter.com/couchsurfing
 instagram: https://www.instagram.com/couchsurfing
 taxonomy:
   region: [USA, EU, AS]
-logo: logo.png
-logoW: logo.png
+logo: logo.jpg
+logoW: logo.jpg
 homepage: homepage.jpg
 metadata:
     'og:title': CaptainShare | Couchsurfing

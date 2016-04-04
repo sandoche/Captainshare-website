@@ -7,8 +7,8 @@ facebook: https://www.facebook.com/AmazonMturkWork/
 twitter: https://twitter.com/amazonmturk
 taxonomy:
   region: [USA, EU]
-logo: logo.png
-logoW: logoW.png
+logo: logo.jpg
+logoW: logoW.jpg
 homepage: homepage.jpg
 metadata:
     'og:title': CaptainShare | Mechanical Turk

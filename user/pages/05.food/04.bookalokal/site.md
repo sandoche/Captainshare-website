@@ -8,8 +8,8 @@ twitter: https://twitter.com/Bookalokal
 instagram: http://instagram.com/bookalokal
 taxonomy:
   region: [USA, EU, AS]
-logo: logo.png
-logoW: logoW.png
+logo: logo.jpg
+logoW: logoW.jpg
 homepage: homepage.jpg
 metadata:
     'og:title': CaptainShare | BookaLokal

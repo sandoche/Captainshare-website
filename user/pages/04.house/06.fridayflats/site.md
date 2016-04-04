@@ -9,8 +9,8 @@ twitter: https://twitter.com/fridayflats
 instagram: https://www.instagram.com/fridayflats
 taxonomy:
   region: [USA, EU, AS]
-logo: logo.png
-logoW: logo.png
+logo: logo.jpg
+logoW: logo.jpg
 homepage: homepage.jpg
 metadata:
     'og:title': CaptainShare | FridayFlats

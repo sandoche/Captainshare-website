@@ -8,8 +8,8 @@ twitter: https://twitter.com/search?q=%23eatincommon
 instagram: http://instagram.com/eatincommon
 taxonomy:
   region: [USA, EU]
-logo: logo.png
-logoW: logoW.png
+logo: logo.jpg
+logoW: logoW.jpg
 homepage: homepage.jpg
 metadata:
     'og:title': CaptainShare | EatinCommon

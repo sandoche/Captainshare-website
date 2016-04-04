@@ -7,8 +7,8 @@ facebook: https://www.facebook.com/superprof.fr
 google: https://plus.google.com/+SuperprofFrance/
 taxonomy:
   region: [EU]
-logo: logo.png
-logoW: logoW.png
+logo: logo.jpg
+logoW: logoW.jpg
 homepage: homepage.jpg
 metadata:
     'og:title': CaptainShare | Superprof
