@@ -42,4 +42,10 @@
   .item .col-xs-12{
     text-align: center;
   }
+
+  .logo-site{
+      width: 160px;
+      display: inline-block;
+      margin-bottom: 5px;
+  }
 }

@@ -48,3 +48,15 @@ h4 {
   font-family: 'Roboto', sans-serif;
   border: 1px solid #fff;
 }
+
+@media (max-width: 768px){
+    .site-title{
+        text-align: center;
+    }
+
+    .site-title .logo-site{
+        width: 160px;
+        display: inline-block;
+        margin-bottom: 5px;
+    }
+}
