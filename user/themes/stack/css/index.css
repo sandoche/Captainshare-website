@@ -27,6 +27,23 @@
 }
 
 
+@media only screen and (max-width : 768px) {
+  .category {
+    background-color: #8BC34A;
+    display: block;
+    margin-top: 10px;
+    padding: 120px 20px 20px 20px;
+    text-align: right;
+    color: #fff;
+    -webkit-transition: background-color 500ms linear;
+    -moz-transition: background-color 500ms linear;
+    -o-transition: background-color 500ms linear;
+    -ms-transition: background-color 500ms linear;
+    transition: background-color 500ms linear;
+    height: 200px;
+  }
+}
+
 #error {
 
   text-align: center;
