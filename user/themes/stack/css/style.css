@@ -22,6 +22,10 @@ body {
     height: auto !important;
     position: initial !important;
     }
+
+    body {
+      margin-bottom: 0 !important;
+  }
 }
 
 
