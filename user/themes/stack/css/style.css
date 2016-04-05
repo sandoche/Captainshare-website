@@ -53,6 +53,16 @@ header h1 {
   text-transform: uppercase;
 }
 
+@media (max-width: 370px){
+    header{
+        text-align: center;
+    }
+
+    header img{
+        float: none !important;
+    }
+}
+
 .title {
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
