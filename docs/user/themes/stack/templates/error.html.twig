@@ -1,0 +1,30 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block stylesheets %}
+  {% do assets.addCss('theme://css/index.css') %}
+{% endblock %}
+
+{% block body %}
+
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12">
+			<div id="error">
+				<div>
+					<h1>{{ page.header.http_response_code }}</h1>
+					<p>
+						{{ page.content }}
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<br><br>
+
+{% endblock %}
+
+
+
+

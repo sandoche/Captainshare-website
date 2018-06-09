@@ -10,5 +10,6 @@ php -S localhost:9000 system/router.php
 
 ## Build static
 ```
-php bin/plugin blackhole generate https://captainshare.learn.uno --output-path docs
+# Run first dev then
+php bin/plugin blackhole generate http://localhost:9000 --output-url https://captainshare.learn.uno --output-path docs
 ```

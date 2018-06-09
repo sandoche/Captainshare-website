@@ -1,0 +1,62 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block stylesheets %}
+  {% do assets.addCss('theme://css/site.css') %}
+{% endblock %}
+
+
+{% block body %}
+<section class="site-title">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-2">
+        <a href="{{ page.header.site_url }}" target="_blank">
+          <img src="{{ page.media[page.header.logoW].url }}" class="img-responsive logo-site"/>
+        </a>
+      </div>
+      <div class="col-sm-6">
+        <h3>{{ page.title }}</h3>
+        <p class="short-description">{{ page.header.description }}</p>
+        <a href="{{ page.parent.url }}" class="category"> <span class="badge badge-category">{{ page.parent.title }}</span></a>
+      </div>
+      <div class="col-sm-4">
+        <h4>Regions</h4>
+        {% for page_taxonomy in page.taxonomy.region %}
+          <span class="label label-default">{{ page_taxonomy }}</span>{% if not loop.last %} {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container info">
+  <div class="row">
+    <div class="col-sm-8">
+      <img src="{{ page.media[page.header.homepage].url }}" class="img-responsive"/><br/>
+    </div>
+    <div class="col-sm-4">
+    {% if page.header.facebook or page.header.twitter or page.header.google or page.header.instagram %}
+      <div class="panel panel-default">
+          <div class="panel-heading">Social networks</div>
+          <div class="panel-body">
+            {% if page.header.facebook %}
+                <a href="{{ page.header.facebook }}" target="_blank"><i class="fa fa-3x fa-facebook-square"></i></a>
+            {% endif %}
+            {% if page.header.twitter %}
+                <a href="{{ page.header.twitter }}" target="_blank"><i class="fa fa-3x fa-twitter-square"></i></a>
+            {% endif %}
+            {% if page.header.google %}
+                <a href="{{ page.header.google }}" target="_blank"><i class="fa fa-3x fa-google-plus-square"></i></a>
+            {% endif %}
+            {% if page.header.instagram %}
+                <a href="{{ page.header.instagram }}" target="_blank"><i class="fa fa-3x fa-instagram"></i></a>
+            {% endif %}
+          </div>
+      </div>
+    {% endif %}
+      <a href="{{ page.header.site_url }}" class="btn btn-default btn-large btn-block" target="_blank">{{ page.title }}</a>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

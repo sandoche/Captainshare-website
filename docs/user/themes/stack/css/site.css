@@ -1,0 +1,69 @@
+.special-col {
+    position: relative;
+    min-height: 1px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.site-title {
+  background: #8BC34A;
+  color: #fff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+hr {
+  margin-bottom: 0px;
+}
+
+h3 {
+  margin-top: 0;
+  font-size: 2.8rem;
+  font-weight: 100;
+}
+
+h4 {
+  margin-top: 2rem;
+}
+
+.short-description {
+
+}
+
+.long-description {
+  margin-top: 20px;
+}
+
+.info {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.panel-body a {
+  margin-right: 5px;
+}
+
+.label-default {
+  background-color: #fff;
+  color: #8BC34A;
+  font-family: 'Roboto', sans-serif;
+}
+
+.badge-category {
+  background-color: #8BC34A;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  border: 1px solid #fff;
+}
+
+@media (max-width: 768px){
+    .site-title{
+        text-align: center;
+    }
+
+    .site-title .logo-site{
+        width: 160px;
+        display: inline-block;
+        margin-bottom: 5px;
+    }
+}

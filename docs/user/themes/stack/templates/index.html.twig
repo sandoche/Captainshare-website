@@ -1,0 +1,41 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block stylesheets %}
+  {% do assets.addCss('theme://css/index.css') %}
+{% endblock %}
+
+{% block body %}
+<section class="container home">
+  <div class="row">
+    {% for page in pages.children.visible %}
+        {% if page.active != 1 %}
+        <div class="col-md-3 col-sm-4 col-xs-6">
+          <a href="{{ page.url }}" class="category">
+              {% if page.header.icon %}<i class="fa fa-{{ page.header.icon }}"></i>{% endif %}
+              {{ page.menu }}
+          </a>
+        </div>
+        {% endif %}
+    {% endfor %}
+  </div>
+</section>
+
+<section class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <!-- CaptainShare -->
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-7670795591258645"
+           data-ad-slot="5801582417"
+           data-ad-format="auto"></ins>
+      <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+      <br>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

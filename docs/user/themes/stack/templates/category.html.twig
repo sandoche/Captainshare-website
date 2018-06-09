@@ -1,0 +1,48 @@
+{% extends 'partials/base.html.twig' %}
+{% set collection = page.collection() %}
+
+{% block stylesheets %}
+  {% do assets.addCss('theme://css/category.css') %}
+{% endblock %}
+
+{% block body %}
+
+<div class="block-title">
+  <div class="container">
+    <h2 class="main-title"><a href="{{ base_url_absolute }}"><i class="fa fa-angle-left"></i></a> {{ page.title }}</h2>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row item">
+    <div class="col-md-8">
+      {% for post in collection %}
+          <div class="row item">
+            <div class="col-sm-3 col-xs-12">
+              <a href="{{ post.header.site_url }}" target="_blank">
+                <img src="{{ post.media[post.header.logo].url }}" class="img-responsive logo-site"/>
+              </a>
+            </div>
+            <div class="col-sm-9 col-xs-12">
+              <div class="content">
+                <h3 class="title"><a href="{{ post.header.site_url }}" target="_blank">{{ post.title }}</a></h3>
+                <div class="description">{{ post.header.description | truncate(200) }}</div>
+                <div class="row">
+                  <div class="col-xs-8">
+                    {% for post_taxonomy in post.taxonomy.region %}
+                      <span class="label label-info">{{ post_taxonomy }}</span>{% if not loop.last %} {% endif %}
+                    {% endfor %}
+                  </div>
+                  <div class="col-xs-4">
+                    <a href="{{post.url}}" class="more">Read more <i class="glyphicon glyphicon-chevron-right"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {% if not loop.last %}<hr/>{% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% endblock %}
