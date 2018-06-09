@@ -1,16 +1,17 @@
 <?php
+/**
+ * @package    Grav.Common.Page
+ *
+ * @copyright  Copyright (C) 2015 - 2018 Trilby Media, LLC. All rights reserved.
+ * @license    MIT License; see LICENSE file for details.
+ */
+
 namespace Grav\Common\Page;
 
 use Grav\Common\Grav;
 use Grav\Common\Iterator;
 use Grav\Common\Utils;
 
-/**
- * Collection of Pages.
- *
- * @author  RocketTheme
- * @license MIT
- */
 class Collection extends Iterator
 {
     /**
@@ -63,6 +64,20 @@ class Collection extends Iterator
     }
 
     /**
+     * Add a page with path and slug
+     *
+     * @param $path
+     * @param $slug
+     * @return $this
+     */
+    public function add($path, $slug)
+    {
+        $this->items[$path] = ['slug' => $slug];
+
+        return $this;
+    }
+
+    /**
      *
      * Create a copy of this collection
      *
@@ -71,6 +86,38 @@ class Collection extends Iterator
     public function copy()
     {
         return new static($this->items, $this->params, $this->pages);
+    }
+
+    /**
+     *
+     * Merge another collection with the current collection
+     *
+     * @param Collection $collection
+     * @return $this
+     */
+    public function merge(Collection $collection)
+    {
+        foreach($collection as $page) {
+            $this->addPage($page);
+        }
+        return $this;
+    }
+
+    /**
+     * Intersect another collection with the current collection
+     *
+     * @param Collection $collection
+     * @return $this
+     */
+    public function intersect(Collection $collection)
+    {
+        $array1 = $this->items;
+        $array2 = $collection->toArray();
+
+        $this->items = array_uintersect($array1, $array2, function($val1, $val2) {
+            return strcmp($val1['slug'], $val2['slug']);
+        });
+        return $this;
     }
 
     /**
@@ -83,7 +130,6 @@ class Collection extends Iterator
     public function setParams(array $params)
     {
         $this->params = array_merge($this->params, $params);
-
         return $this;
     }
 
@@ -124,11 +170,29 @@ class Collection extends Iterator
     }
 
     /**
+     * Split collection into array of smaller collections.
+     *
+     * @param $size
+     * @return array|Collection[]
+     */
+    public function batch($size)
+    {
+        $chunks = array_chunk($this->items, $size, true);
+
+        $list = [];
+        foreach ($chunks as $chunk) {
+            $list[] = new static($chunk, $this->params, $this->pages);
+        }
+
+        return $list;
+    }
+
+    /**
      * Remove item from the list.
      *
      * @param Page|string|null $key
      *
-     * @return $this|void
+     * @return $this
      * @throws \InvalidArgumentException
      */
     public function remove($key = null)
@@ -153,12 +217,13 @@ class Collection extends Iterator
      * @param string $by
      * @param string $dir
      * @param array  $manual
+     * @param string $sort_flags
      *
      * @return $this
      */
-    public function order($by, $dir = 'asc', $manual = null)
+    public function order($by, $dir = 'asc', $manual = null, $sort_flags = null)
     {
-        $this->items = $this->pages->sortCollection($this, $by, $dir, $manual);
+        $this->items = $this->pages->sortCollection($this, $by, $dir, $manual, $sort_flags);
 
         return $this;
     }
@@ -247,7 +312,7 @@ class Collection extends Iterator
      *
      * @param  string $path the path the item
      *
-     * @return Page    Item in the array the the current position.
+     * @return Integer   the index of the current page.
      */
     public function currentPosition($path)
     {
@@ -270,22 +335,21 @@ class Collection extends Iterator
     public function dateRange($startDate, $endDate = false, $field = false)
     {
         $start = Utils::date2timestamp($startDate);
-        $end = $endDate ? Utils::date2timestamp($endDate) : strtotime("now +1000 years");
+        $end = $endDate ? Utils::date2timestamp($endDate) : false;
 
         $date_range = [];
-
         foreach ($this->items as $path => $slug) {
             $page = $this->pages->get($path);
             if ($page !== null) {
                 $date = $field ? strtotime($page->value($field)) : $page->date();
 
-                if ($date > $start && $date < $end) {
+                if ($date >= $start && (!$end || $date <= $end)) {
                     $date_range[$path] = $slug;
                 }
             }
         }
-        $this->items = $date_range;
 
+        $this->items = $date_range;
         return $this;
     }
 
@@ -545,5 +609,24 @@ class Collection extends Iterator
         $this->items = $items;
 
         return $this;
+    }
+
+    /**
+     * Get the extended version of this Collection with each page keyed by route
+     *
+     * @return array
+     * @throws \Exception
+     */
+    public function toExtendedArray()
+    {
+        $items  = [];
+        foreach ($this->items as $path => $slug) {
+            $page = $this->pages->get($path);
+
+            if ($page !== null) {
+                $items[$page->route()] = $page->toArray();
+            }
+        }
+        return $items;
     }
 }

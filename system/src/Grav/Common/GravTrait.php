@@ -1,16 +1,18 @@
 <?php
+/**
+ * @package    Grav.Common
+ *
+ * @copyright  Copyright (C) 2015 - 2018 Trilby Media, LLC. All rights reserved.
+ * @license    MIT License; see LICENSE file for details.
+ */
+
 namespace Grav\Common;
 
 /**
- * Class GravTrait
- *
- * @package Grav\Common
+ * @deprecated 2.0
  */
 trait GravTrait
 {
-    /**
-     * @var Grav
-     */
     protected static $grav;
 
     /**
@@ -22,14 +24,9 @@ trait GravTrait
             self::$grav = Grav::instance();
         }
 
-        return self::$grav;
-    }
+        $caller = self::$grav['debugger']->getCaller();
+        self::$grav['debugger']->addMessage("Deprecated GravTrait used in {$caller['file']}", 'deprecated');
 
-    /**
-     * @param Grav $grav
-     */
-    public static function setGrav(Grav $grav)
-    {
-        self::$grav = $grav;
+        return self::$grav;
     }
 }

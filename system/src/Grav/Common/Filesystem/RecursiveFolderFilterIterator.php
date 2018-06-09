@@ -1,28 +1,29 @@
 <?php
+/**
+ * @package    Grav.Common.FileSystem
+ *
+ * @copyright  Copyright (C) 2015 - 2018 Trilby Media, LLC. All rights reserved.
+ * @license    MIT License; see LICENSE file for details.
+ */
+
 namespace Grav\Common\Filesystem;
 
-use Grav\Common\GravTrait;
+use Grav\Common\Grav;
 
-/**
- * Class RecursiveFolderFilterIterator
- * @package Grav\Common\Filesystem
- */
 class RecursiveFolderFilterIterator extends \RecursiveFilterIterator
 {
-    use GravTrait;
-
     protected static $folder_ignores;
 
     /**
      * Create a RecursiveFilterIterator from a RecursiveIterator
      *
-     * @param RecursiveIterator $iterator
+     * @param \RecursiveIterator $iterator
      */
     public function __construct(\RecursiveIterator $iterator)
     {
         parent::__construct($iterator);
         if (empty($this::$folder_ignores)) {
-            $this::$folder_ignores = self::getGrav()['config']->get('system.pages.ignore_folders');
+            $this::$folder_ignores = Grav::instance()['config']->get('system.pages.ignore_folders');
         }
     }
 
@@ -36,7 +37,7 @@ class RecursiveFolderFilterIterator extends \RecursiveFilterIterator
         /** @var $current \SplFileInfo */
         $current = $this->current();
 
-        if ($current->isDir() && !in_array($current->getFilename(), $this::$folder_ignores)) {
+        if ($current->isDir() && !in_array($current->getFilename(), $this::$folder_ignores, true)) {
             return true;
         }
         return false;

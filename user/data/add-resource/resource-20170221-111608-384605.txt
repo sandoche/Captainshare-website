@@ -1,0 +1,5 @@
+name: Rentaloo
+url: http://rentaloo.de
+email: rentaloode@gmail.com
+description: RENTALOO.DE is a sharing economy startup oriented on the full cycle easy-to-use service for the local student rents and shares.
+g-recaptcha-response: 03AHJ_Vuu6Njw-NyCvBOImUtdypm0OL0fi42-knh5Jkww9p0pxLFGHoHba_BQOkUTSpdu22bWZnUS_e-kK-QYv9S9DD7lopAaXL9o8856illCXdBgjjX1rg7Lmj03T8u1-abMBXbHSHp0fha6UmicCDOV6SeP_yhmmy2xGC40kYKtIJj0zY2d2ISpgkDDJ0_f-m1NcfkybVccUt9d5QOnN_VVcdgFQoZ9TQL-Tjbhs3A3I8zXryfXnlRxIpghBpqhgKUkgYeY7F34hhQCaE9kNaWpIJritozuAFKX5wXHoJmx-nvfVvLUc1d6Y9PIz93QnhvuR6R3F0vMgRwPJjN32zU3oIPEY-w7VDxyM6sbFeUcMarZXjdUqn4yKP5C3Rro0iCxfXaj-QDxJohSzjw7QawkVh5S4F7q2sA

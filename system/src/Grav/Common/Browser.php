@@ -1,13 +1,15 @@
 <?php
+/**
+ * @package    Grav.Common
+ *
+ * @copyright  Copyright (C) 2015 - 2018 Trilby Media, LLC. All rights reserved.
+ * @license    MIT License; see LICENSE file for details.
+ */
+
 namespace Grav\Common;
 
 /**
- * Handles browser and platform versions
- *
  * Internally uses the PhpUserAgent package https://github.com/donatj/PhpUserAgent
- *
- * @author  RocketTHeme
- * @licence MIT
  */
 class Browser
 {

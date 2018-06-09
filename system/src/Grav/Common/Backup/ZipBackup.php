@@ -1,38 +1,38 @@
 <?php
+/**
+ * @package    Grav.Common.Backup
+ *
+ * @copyright  Copyright (C) 2015 - 2018 Trilby Media, LLC. All rights reserved.
+ * @license    MIT License; see LICENSE file for details.
+ */
+
 namespace Grav\Common\Backup;
 
-use Grav\Common\GravTrait;
-use Grav\Common\Filesystem\Folder;
+use Grav\Common\Grav;
 use Grav\Common\Inflector;
 
-/**
- * The ZipBackup class lets you create simple zip-backups of a grav site
- *
- * @author RocketTheme
- * @license MIT
- */
 class ZipBackup
 {
-    use GravTrait;
-
     protected static $ignorePaths = [
         'backup',
         'cache',
         'images',
-        'logs'
+        'logs',
+        'tmp'
     ];
 
     protected static $ignoreFolders = [
         '.git',
         '.svn',
         '.hg',
-        '.idea'
+        '.idea',
+        'node_modules'
     ];
 
     /**
      * Backup
      *
-     * @param null          $destination
+     * @param string|null   $destination
      * @param callable|null $messager
      *
      * @return null|string
@@ -40,15 +40,14 @@ class ZipBackup
     public static function backup($destination = null, callable $messager = null)
     {
         if (!$destination) {
-            $destination = self::getGrav()['locator']->findResource('backup://', true);
+            $destination = Grav::instance()['locator']->findResource('backup://', true);
 
-            if (!$destination)
+            if (!$destination) {
                 throw new \RuntimeException('The backup folder is missing.');
-
-            Folder::mkdir($destination);
+            }
         }
 
-        $name = self::getGrav()['config']->get('site.title', basename(GRAV_ROOT));
+        $name = substr(strip_tags(Grav::instance()['config']->get('site.title', basename(GRAV_ROOT))), 0, 20);
 
         $inflector = new Inflector();
 
@@ -108,18 +107,19 @@ class ZipBackup
      * @param $exclusiveLength
      * @param $messager
      */
-    private static function folderToZip($folder, \ZipArchive &$zipFile, $exclusiveLength, callable $messager = null)
+    private static function folderToZip($folder, \ZipArchive $zipFile, $exclusiveLength, callable $messager = null)
     {
         $handle = opendir($folder);
         while (false !== $f = readdir($handle)) {
-            if ($f != '.' && $f != '..') {
+            if ($f !== '.' && $f !== '..') {
                 $filePath = "$folder/$f";
                 // Remove prefix from file path before add to zip.
                 $localPath = substr($filePath, $exclusiveLength);
 
                 if (in_array($f, static::$ignoreFolders)) {
                     continue;
-                } elseif (in_array($localPath, static::$ignorePaths)) {
+                }
+                if (in_array($localPath, static::$ignorePaths)) {
                     $zipFile->addEmptyDir($f);
                     continue;
                 }
